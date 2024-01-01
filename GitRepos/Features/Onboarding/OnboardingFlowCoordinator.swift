@@ -10,7 +10,7 @@ import UIKit
 
 final class OnboardingFlowCoordinator: BaseCoordinator {
     
-    weak var navigationController: UINavigationController?
+     var navigationController: UINavigationController
     var onboardingDIContainer: OnboardingDIContainer
     
     init(navigationController: UINavigationController, onboardingDIContainer: OnboardingDIContainer) {
@@ -21,8 +21,18 @@ final class OnboardingFlowCoordinator: BaseCoordinator {
     override func start() {
         let vc = onboardingDIContainer.makeOnboardingController()
         vc.onboardingFlowCoordinator = self
-        navigationController?.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: false)
     }
+    
+    func showUserLisiting() {
+        let userDIContainer = AppDIContainer.sharedInstance.makeUserDIContainer()
+        let userFlow = userDIContainer.makeUserFlowCoordinator(navigationController: navigationController)
+        store(coordinator: userFlow)
+        userFlow.start()
+        userFlow.isCompleted = { [weak self] in
+            self?.free(coordinator: userFlow)
+        }
+   }
     
     deinit {
         print("OnboardingFlowCoordinator is now deallocated")

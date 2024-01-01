@@ -13,9 +13,14 @@ class AppDIContainer {
     init() {} // This will be in Test and it is a tradeoff that we make between enforceability and simplicity.
     
     
-    // MARK: - DIContainers for Onboadring
+    // MARK: - DIContainer for Onboadring
     func makeOnboardingDIContainer() -> OnboardingDIContainer {
         return OnboardingDIContainer.sharedInstance
+    }
+    
+    // MARK: - DIContainer for UserDIContainer
+    func makeUserDIContainer() -> UserDIContainer {
+        return UserDIContainer.sharedInstance
     }
     
     func makeUserDefaultManager() -> UserDefaultManager {

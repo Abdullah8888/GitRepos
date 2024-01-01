@@ -35,8 +35,8 @@
 		B8F1E20E2B42A89D0017DF01 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2092B42A89D0017DF01 /* Toast.swift */; };
 		B8F1E20F2B42A89D0017DF01 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E20A2B42A89D0017DF01 /* StackView.swift */; };
 		B8F1E2102B42A89D0017DF01 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E20B2B42A89D0017DF01 /* Button.swift */; };
-		B8F1E2152B42A99D0017DF01 /* OnbordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2142B42A99D0017DF01 /* OnbordingController.swift */; };
-		B8F1E2172B42A9A90017DF01 /* OnbordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2162B42A9A90017DF01 /* OnbordingView.swift */; };
+		B8F1E2152B42A99D0017DF01 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2142B42A99D0017DF01 /* OnboardingController.swift */; };
+		B8F1E2172B42A9A90017DF01 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2162B42A9A90017DF01 /* OnboardingView.swift */; };
 		B8F1E21A2B42BAEC0017DF01 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B8F1E2192B42BAEC0017DF01 /* SDWebImage */; };
 		B8F1E21D2B42BC2E0017DF01 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B8F1E21C2B42BC2E0017DF01 /* Realm */; };
 		B8F1E21F2B42BC2E0017DF01 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B8F1E21E2B42BC2E0017DF01 /* RealmSwift */; };
@@ -67,6 +67,14 @@
 		B8F1E2792B4362A30017DF01 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8F1E26B2B4362A30017DF01 /* NunitoSans-Black.ttf */; };
 		B8F1E27A2B4362A30017DF01 /* NunitoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8F1E26C2B4362A30017DF01 /* NunitoSans-ExtraBoldItalic.ttf */; };
 		B8F1E27B2B4362A30017DF01 /* NunitoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8F1E26D2B4362A30017DF01 /* NunitoSans-ExtraLightItalic.ttf */; };
+		B8F1E27F2B4368140017DF01 /* UserListingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E27E2B4368140017DF01 /* UserListingController.swift */; };
+		B8F1E2832B4368DB0017DF01 /* UserListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2822B4368DB0017DF01 /* UserListingView.swift */; };
+		B8F1E2852B4368F00017DF01 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2842B4368F00017DF01 /* RepoCell.swift */; };
+		B8F1E2872B4369760017DF01 /* UserFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2862B4369760017DF01 /* UserFlowCoordinator.swift */; };
+		B8F1E28B2B436ABB0017DF01 /* UserDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E28A2B436ABB0017DF01 /* UserDetailsController.swift */; };
+		B8F1E28D2B436AC70017DF01 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E28C2B436AC70017DF01 /* UserDetailsView.swift */; };
+		B8F1E28F2B436AE40017DF01 /* RecentRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E28E2B436AE40017DF01 /* RecentRepoCell.swift */; };
+		B8F1E2912B436C840017DF01 /* UserDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2902B436C840017DF01 /* UserDIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,8 +127,8 @@
 		B8F1E2092B42A89D0017DF01 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		B8F1E20A2B42A89D0017DF01 /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		B8F1E20B2B42A89D0017DF01 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		B8F1E2142B42A99D0017DF01 /* OnbordingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingController.swift; sourceTree = "<group>"; };
-		B8F1E2162B42A9A90017DF01 /* OnbordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbordingView.swift; sourceTree = "<group>"; };
+		B8F1E2142B42A99D0017DF01 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		B8F1E2162B42A9A90017DF01 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B8F1E22B2B42BF4E0017DF01 /* UIview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIview+Extension.swift"; sourceTree = "<group>"; };
 		B8F1E22E2B42BFCC0017DF01 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		B8F1E2312B42CBA20017DF01 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
@@ -147,6 +155,14 @@
 		B8F1E26B2B4362A30017DF01 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
 		B8F1E26C2B4362A30017DF01 /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		B8F1E26D2B4362A30017DF01 /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		B8F1E27E2B4368140017DF01 /* UserListingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingController.swift; sourceTree = "<group>"; };
+		B8F1E2822B4368DB0017DF01 /* UserListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingView.swift; sourceTree = "<group>"; };
+		B8F1E2842B4368F00017DF01 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		B8F1E2862B4369760017DF01 /* UserFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFlowCoordinator.swift; sourceTree = "<group>"; };
+		B8F1E28A2B436ABB0017DF01 /* UserDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsController.swift; sourceTree = "<group>"; };
+		B8F1E28C2B436AC70017DF01 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		B8F1E28E2B436AE40017DF01 /* RecentRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRepoCell.swift; sourceTree = "<group>"; };
+		B8F1E2902B436C840017DF01 /* UserDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +323,7 @@
 		B8F1E2122B42A9260017DF01 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B8F1E27C2B43677D0017DF01 /* User */,
 				B8F1E2132B42A9690017DF01 /* Onboarding */,
 			);
 			path = Features;
@@ -315,8 +332,8 @@
 		B8F1E2132B42A9690017DF01 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				B8F1E2142B42A99D0017DF01 /* OnbordingController.swift */,
-				B8F1E2162B42A9A90017DF01 /* OnbordingView.swift */,
+				B8F1E2142B42A99D0017DF01 /* OnboardingController.swift */,
+				B8F1E2162B42A9A90017DF01 /* OnboardingView.swift */,
 				B8F1E2312B42CBA20017DF01 /* OnboardingCell.swift */,
 				B8F1E2432B42D5910017DF01 /* OnboardingModel.swift */,
 				B8F1E24A2B42DF7F0017DF01 /* OnboardingFlowCoordinator.swift */,
@@ -338,6 +355,7 @@
 			children = (
 				B8F1E2462B42DE1E0017DF01 /* AppDIContainer.swift */,
 				B8F1E2482B42DEAD0017DF01 /* OnboardingDIContainer.swift */,
+				B8F1E2902B436C840017DF01 /* UserDIContainer.swift */,
 			);
 			path = DIContainer;
 			sourceTree = "<group>";
@@ -379,6 +397,36 @@
 				B8F1E26D2B4362A30017DF01 /* NunitoSans-ExtraLightItalic.ttf */,
 			);
 			path = NunitoSans;
+			sourceTree = "<group>";
+		};
+		B8F1E27C2B43677D0017DF01 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B8F1E2892B436AA20017DF01 /* UserDetails */,
+				B8F1E2882B436A8B0017DF01 /* UserListing */,
+				B8F1E2862B4369760017DF01 /* UserFlowCoordinator.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		B8F1E2882B436A8B0017DF01 /* UserListing */ = {
+			isa = PBXGroup;
+			children = (
+				B8F1E27E2B4368140017DF01 /* UserListingController.swift */,
+				B8F1E2822B4368DB0017DF01 /* UserListingView.swift */,
+				B8F1E2842B4368F00017DF01 /* RepoCell.swift */,
+			);
+			path = UserListing;
+			sourceTree = "<group>";
+		};
+		B8F1E2892B436AA20017DF01 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B8F1E28A2B436ABB0017DF01 /* UserDetailsController.swift */,
+				B8F1E28C2B436AC70017DF01 /* UserDetailsView.swift */,
+				B8F1E28E2B436AE40017DF01 /* RecentRepoCell.swift */,
+			);
+			path = UserDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,13 +586,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F1E2832B4368DB0017DF01 /* UserListingView.swift in Sources */,
 				B8F1E1BB2B41F2CD0017DF01 /* ViewController.swift in Sources */,
 				B8F1E2472B42DE1E0017DF01 /* AppDIContainer.swift in Sources */,
 				B8F1E1F32B42A5200017DF01 /* UIWindow+Extension.swift in Sources */,
 				B8F1E1B72B41F2CD0017DF01 /* AppDelegate.swift in Sources */,
+				B8F1E2852B4368F00017DF01 /* RepoCell.swift in Sources */,
+				B8F1E2872B4369760017DF01 /* UserFlowCoordinator.swift in Sources */,
 				B8F1E2042B42A7C60017DF01 /* NSObject+Extension.swift in Sources */,
 				B8F1E2442B42D5910017DF01 /* OnboardingModel.swift in Sources */,
 				B8F1E24B2B42DF7F0017DF01 /* OnboardingFlowCoordinator.swift in Sources */,
+				B8F1E2912B436C840017DF01 /* UserDIContainer.swift in Sources */,
 				B8F1E1EB2B429EF90017DF01 /* BaseView.swift in Sources */,
 				B8F1E2522B42E07E0017DF01 /* UserDefaultConstants.swift in Sources */,
 				B8F1E1E92B429EE70017DF01 /* BaseController.swift in Sources */,
@@ -554,13 +606,17 @@
 				B8F1E1FF2B42A7C60017DF01 /* UIImageView+Extension.swift in Sources */,
 				B8F1E20D2B42A89D0017DF01 /* Label.swift in Sources */,
 				B8F1E2492B42DEAD0017DF01 /* OnboardingDIContainer.swift in Sources */,
-				B8F1E2172B42A9A90017DF01 /* OnbordingView.swift in Sources */,
+				B8F1E2172B42A9A90017DF01 /* OnboardingView.swift in Sources */,
+				B8F1E28B2B436ABB0017DF01 /* UserDetailsController.swift in Sources */,
+				B8F1E27F2B4368140017DF01 /* UserListingController.swift in Sources */,
 				B8F1E24D2B42DFBD0017DF01 /* AppFlowCoordinator.swift in Sources */,
 				B8F1E1B92B41F2CD0017DF01 /* SceneDelegate.swift in Sources */,
 				B8F1E22F2B42BFCC0017DF01 /* RealmManager.swift in Sources */,
 				B8F1E22C2B42BF4E0017DF01 /* UIview+Extension.swift in Sources */,
 				B8F1E2052B42A7C60017DF01 /* UIFont+Extension.swift in Sources */,
+				B8F1E28F2B436AE40017DF01 /* RecentRepoCell.swift in Sources */,
 				B8F1E2032B42A7C60017DF01 /* UIColor+Extension.swift in Sources */,
+				B8F1E28D2B436AC70017DF01 /* UserDetailsView.swift in Sources */,
 				B8F1E2022B42A7C60017DF01 /* UITextField+Extension.swift in Sources */,
 				B8F1E1F02B429FEE0017DF01 /* UIView+Layout.swift in Sources */,
 				B8F1E1ED2B429F740017DF01 /* Constant.swift in Sources */,
@@ -568,7 +624,7 @@
 				B8F1E20E2B42A89D0017DF01 /* Toast.swift in Sources */,
 				B8F1E2012B42A7C60017DF01 /* UIEdgeInsects+Extension.swift in Sources */,
 				B8F1E2322B42CBA20017DF01 /* OnboardingCell.swift in Sources */,
-				B8F1E2152B42A99D0017DF01 /* OnbordingController.swift in Sources */,
+				B8F1E2152B42A99D0017DF01 /* OnboardingController.swift in Sources */,
 				B8F1E2002B42A7C60017DF01 /* UITableView+Extension.swift in Sources */,
 				B8F1E2102B42A89D0017DF01 /* Button.swift in Sources */,
 				B8F1E2502B42E06C0017DF01 /* UserDefault+Util.swift in Sources */,

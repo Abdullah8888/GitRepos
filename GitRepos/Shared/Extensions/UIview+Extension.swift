@@ -66,4 +66,31 @@ extension UIView {
         layer.shadowRadius = radius
         layer.shadowOffset = shadowOffset
     }
+    
+    func onClick(completion: (() -> Void)? = nil) {
+       addTapGesture {
+           completion?()
+       }
+   }
+    
+    func addTapGesture(action: @escaping () -> Void ){
+        let tap = BindableGestureRecognizer(action: action)
+        tap.numberOfTapsRequired = 1
+        self.addGestureRecognizer(tap)
+        self.isUserInteractionEnabled = true
+    }
+}
+
+final class BindableGestureRecognizer: UITapGestureRecognizer {
+    private var action: () -> Void
+    
+    init(action: @escaping () -> Void) {
+        self.action = action
+        super.init(target: nil, action: nil)
+        self.addTarget(self, action: #selector(execute))
+    }
+    
+    @objc private func execute() {
+        action()
+    }
 }

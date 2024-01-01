@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 class OnboardingController: BaseController<OnboardingView> {
     
     weak var onboardingFlowCoordinator: OnboardingFlowCoordinator?
@@ -17,5 +16,9 @@ class OnboardingController: BaseController<OnboardingView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         _view.onboardingData = OnboardingModel().data
+        
+        _view.getStartedButton.onClick(completion: weakify({ strongSelf in
+            strongSelf.onboardingFlowCoordinator?.showUserLisiting()
+        }))
     }
 }
