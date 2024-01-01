@@ -264,6 +264,10 @@ extension UIColor {
         return UIColor(hex: "#EEEEEE")
     }
     
+    @nonobjc class var hex7B7B7B: UIColor {
+        return UIColor(hex: "#7B7B7B")
+    }
+    
     @nonobjc class var hexF9F6F6: UIColor {
         return UIColor(hex: "#F9F6F6")
     }

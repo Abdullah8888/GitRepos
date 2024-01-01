@@ -17,20 +17,18 @@ class OnboardingCell: BaseCollectionViewCell {
     }()
     
     let headerLabel: Label = {
-        let label = Label(text: "", font: .nunitoSansSemiBold(size: 24), textColor: .black, alignment: .center)
+        let label = Label(text: "", font: .nunitosSansBold(size: 24), textColor: .black, alignment: .center)
         return label
     }()
     
     let subHeaderLabel: Label = {
-        let label = Label(text: "", font: .nunitoSansRegular(size: 16), textColor: .black, alignment: .center)
+        let label = Label(text: "", font: .nunitoSansRegular(size: 16), textColor: .hex7B7B7B, alignment: .center)
         return label
     }()
     
     override func setup() {
         super.setup()
         addSubviews(imageView, subHeaderLabel, headerLabel)
-       // imageView.fillUpSuperview()
-        
         subHeaderLabel.anchor(leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor)
         
         headerLabel.anchor(leading: leadingAnchor, bottom: subHeaderLabel.topAnchor, trailing: trailingAnchor)

@@ -18,6 +18,7 @@ class OnboardingView: BaseView {
         layout.scrollDirection = .horizontal
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         return collectionView
     }()
@@ -33,7 +34,7 @@ class OnboardingView: BaseView {
     }()
     
     let getStartedButton: Button = {
-        let btn = Button(btnTitle: "Get Started", btnTextColor: .black, btnBackgroundColor: .hexFFB400, textFont: .nunitoSansRegular(size: 16))
+        let btn = Button(btnTitle: "Get Started", btnTextColor: .black, btnBackgroundColor: .hexFFB400, textFont: .nunitosSansBold(size: 16))
         btn.constrainHeight(constant: 42)
         btn.cornerRadius = 12
         return btn
@@ -49,14 +50,20 @@ class OnboardingView: BaseView {
         super.setup()
         
         addSubviews(getStartedButton, pageControl, onboardingCollectionView)
-        onboardingCollectionView.anchor()
         
         getStartedButton.anchor(leading: leadingAnchor, bottom: bottomAnchor, trailing: trailingAnchor, margin: .init(top: 0, left: 30, bottom: 80, right: 30))
         
         pageControl.anchor(leading: leadingAnchor, bottom: getStartedButton.topAnchor, trailing: trailingAnchor, margin: .bottomOnly(40))
         
-        onboardingCollectionView.anchor(top: topAnchor, leading: leadingAnchor, bottom: pageControl.topAnchor, trailing: trailingAnchor, margin: .bottomOnly(20))
+        onboardingCollectionView.anchor(top: topAnchor, leading: leadingAnchor, bottom: pageControl.topAnchor, trailing: trailingAnchor, margin: .topBottomOnly(20, 20))
         
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let contentOffsetX = scrollView.contentOffset.x
+        let itemWidth = onboardingCollectionView.frame.size.width
+        let currentItem = Int(round(contentOffsetX / itemWidth))
+        pageControl.currentPage = currentItem
     }
 }
 
@@ -83,4 +90,5 @@ extension OnboardingView: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         0
     }
+    
 }
