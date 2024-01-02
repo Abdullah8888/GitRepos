@@ -29,6 +29,7 @@ The project consist of two features:-
     
 ## Functionalites
 The project consist of the functionalities:-
+- Added App icon.
 - Pull-to-refresh functionality to refresh the list of items.
 - Caching to store the fetched data locally and provide offline
 support.
