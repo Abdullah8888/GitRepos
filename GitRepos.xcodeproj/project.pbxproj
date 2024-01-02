@@ -85,7 +85,6 @@
 		B8F1E2A72B44087B0017DF01 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2A62B44087B0017DF01 /* NetworkConstant.swift */; };
 		B8F1E2AC2B440C8C0017DF01 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2AB2B440C8C0017DF01 /* UserDetailsViewModel.swift */; };
 		B8F1E2AE2B440C9F0017DF01 /* UserListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2AD2B440C9F0017DF01 /* UserListingViewModel.swift */; };
-		B8F1E2B12B44693F0017DF01 /* sample_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B8F1E2B02B44693F0017DF01 /* sample_video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,7 +182,6 @@
 		B8F1E2A62B44087B0017DF01 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		B8F1E2AB2B440C8C0017DF01 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		B8F1E2AD2B440C9F0017DF01 /* UserListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingViewModel.swift; sourceTree = "<group>"; };
-		B8F1E2B02B44693F0017DF01 /* sample_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,7 +244,6 @@
 				B8F1E1E62B429EA80017DF01 /* Shared */,
 				B8F1E2112B42A9030017DF01 /* Application */,
 				B8F1E2122B42A9260017DF01 /* Features */,
-				B8F1E2AF2B4469030017DF01 /* Resources */,
 				B8F1E1B62B41F2CD0017DF01 /* AppDelegate.swift */,
 				B8F1E1B82B41F2CD0017DF01 /* SceneDelegate.swift */,
 				B8F1E1BA2B41F2CD0017DF01 /* ViewController.swift */,
@@ -509,14 +506,6 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		B8F1E2AF2B4469030017DF01 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B8F1E2B02B44693F0017DF01 /* sample_video.mp4 */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -636,7 +625,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8F1E2722B4362A30017DF01 /* NunitoSans-BlackItalic.ttf in Resources */,
-				B8F1E2B12B44693F0017DF01 /* sample_video.mp4 in Resources */,
 				B8F1E2752B4362A30017DF01 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
 				B8F1E2732B4362A30017DF01 /* NunitoSans-ExtraBold.ttf in Resources */,
 				B8F1E2772B4362A30017DF01 /* NunitoSans-Bold.ttf in Resources */,

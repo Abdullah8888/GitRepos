@@ -1,10 +1,7 @@
 # GitRepos
 A simple iOS application that retrieves data from an API, presents it in a table view, and incorporates the principles of clean architecture.
 
-
-<video width="300" height="600" controls>
-    <source src="https://github.com/Abdullah8888/GitRepos/blob/main/GitRepos/Resources/sample_video.mp4" type="video/mp4">
-</video>
+[Click here to a the video demo](https://pub.dev).
 
 ## API
 - https://api.github.com/repositories
