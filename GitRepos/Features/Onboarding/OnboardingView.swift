@@ -81,8 +81,6 @@ extension OnboardingView: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print("collectionView here is \(collectionView.frame), \(collectionView.bounds)")
-        print("collectionView2 here is \(onboardingCollectionView.frame), \(onboardingCollectionView.bounds)")
         let bounds = collectionView.bounds;
         return CGSize(width: bounds.width,height: bounds.height)
     }

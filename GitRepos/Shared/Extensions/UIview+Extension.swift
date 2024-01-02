@@ -25,7 +25,7 @@ extension UIView {
         view.addSubview(activity)
         activity.placeAtCenterOf(centerY: view.centerYAnchor, centerX: view.centerXAnchor)
         activity.startAnimating()
-        activity.color = activityColor
+        //activity.color = activityColor
     }
     
     func hideLoader(on view: UIView) {

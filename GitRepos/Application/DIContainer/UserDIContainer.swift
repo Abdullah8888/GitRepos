@@ -22,6 +22,7 @@ class UserDIContainer {
     
     func makeUserListingController() -> UserListingController {
         let vc = UserListingController(view: UserListingView())
+        vc.viewModel = UserListingViewModel(getReposUseCase: appDIContainer.makeGetReposUseCase())
         return vc
     }
     

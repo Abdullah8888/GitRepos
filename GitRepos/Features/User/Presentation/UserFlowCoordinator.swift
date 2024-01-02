@@ -24,9 +24,10 @@ final class UserFlowCoordinator: BaseCoordinator {
         navigationController?.setViewControllers([vc], animated: false)
     }
     
-    func showUserDetails(id: Int) {
+    func showUserDetails(repoModel: RepoModel?) {
         let vc = userDIContainer.makeUserDetailsController()
         vc.userFlowCoordinator = self
+        vc.repoModel = repoModel
         navigationController?.pushViewController(vc, animated: false)
     }
     

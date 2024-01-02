@@ -26,4 +26,20 @@ class AppDIContainer {
     func makeUserDefaultManager() -> UserDefaultManager {
         return UserDefaultManager.shared
     }
+    
+    func makeRemoteDataSource() -> RemoteDataSource {
+        NetworkService()
+    }
+    
+    func makeRealmManger() -> RealmManagerDelegate {
+        RealmManager.sharedInstance
+    }
+    
+    func makeGitRepoRepository() -> GitRepoRepositoryDelegate {
+        GitRepoRepository(remoteDataSource: makeRemoteDataSource(), realmManager: makeRealmManger())
+    }
+    
+    func makeGetReposUseCase() -> GetReposUseCaseDelegate {
+        GetReposUseCase(gitRepoRepository: makeGitRepoRepository())
+    }
 }

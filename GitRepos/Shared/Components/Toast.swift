@@ -74,7 +74,7 @@ final public class Toast: UIView {
         }, completion: nil)
     }
     
-    func showToastWithTItle(_ title: String?, type: ToastType, duration: TimeInterval = 1.0) {
+    func showToastWithTitle(_ title: String?, type: ToastType, duration: TimeInterval = 1.0) {
         Constant.lightHaptic()
         self.type = type
         self.titleLabel.text = title

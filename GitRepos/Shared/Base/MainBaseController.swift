@@ -7,8 +7,12 @@
 
 import Foundation
 import UIKit
+import RxSwift
 
 class MainBaseController: UIViewController {
+    
+    let disposeBag = DisposeBag()
+    
     let backArrowImageView: UIImageView = {
         let img = UIImageView(image: UIImage(named: "back_arrow"))
         img.contentMode = .scaleAspectFit
@@ -71,6 +75,12 @@ class MainBaseController: UIViewController {
     func removeLoader() {
         DispatchQueue.main.async {
             self.loaderContainer.removeFromSuperview()
+        }
+    }
+    
+    func showToastWithTitle(_ title: String?, type: ToastType, duration: TimeInterval = 1.0) {
+        DispatchQueue.main.async {
+            Toast.shared.showToastWithTitle(title ?? "Unable to complete this process, please try again", type: type, duration: duration)
         }
     }
 }

@@ -74,10 +74,6 @@ class BaseCollectionViewCell: UICollectionViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    public func showToastWithTItle(_ title: String?, type: ToastType, duration: TimeInterval = 1.0) {
-        Toast.shared.showToastWithTItle(title ?? "Unable to complete this process, please try again", type: type, duration: duration)
-    }
 }
 
 class BaseTableViewCell: UITableViewCell,
@@ -95,10 +91,6 @@ class BaseTableViewCell: UITableViewCell,
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    func showToastWithTItle(_ title: String?, type: ToastType, duration: TimeInterval = 1.0) {
-        Toast.shared.showToastWithTItle(title ?? "Unable to complete this process, please try again", type: type, duration: duration)
     }
 }
 

@@ -80,4 +80,10 @@ class RepoCell: BaseTableViewCell {
     func updateData(imageName: String, header: String, subHeader: String) {
         
     }
+    
+    func updateData(data: RepoModel) {
+        let fullName = data.fullName?.replacingOccurrences(of: "/", with: " ")
+        nameLabel.text = fullName?.capitalized
+        userImageView.showImage(url: data.owner?.avatarUrl ?? "")
+    }
 }

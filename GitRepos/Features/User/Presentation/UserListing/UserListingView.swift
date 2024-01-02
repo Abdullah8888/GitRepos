@@ -66,13 +66,27 @@ class UserListingView: BaseView {
         tableView.register(RepoCell.self, forCellReuseIdentifier: repoCell)
         tableView.separatorStyle = .none
         tableView.backgroundColor = .white
+        tableView.refreshControl = refreshControl
         return tableView
     }()
     
-    var didSelectItemAt: ((Int) -> ())?
+    let refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        return refreshControl
+    }()
+    
+    var didSelectItemAt: ((RepoModel?) -> ())?
+    
+    var showLoaderHandler: ((Bool) -> ())?
     
     var data: [RepoModel]? {
         didSet {
+            if data?.isEmpty ?? false {
+                showLoaderHandler?(true)
+            }
+            else {
+                showLoaderHandler?(false)
+            }
             tableView.reloadData()
         }
     }
@@ -95,6 +109,7 @@ class UserListingView: BaseView {
         slidersIcon.anchor(top: searchBarContainerView.topAnchor, bottom: searchBarContainerView.bottomAnchor, trailing: searchBarContainerView.trailingAnchor, margin: .rightOnly(20))
         
         searchBar.anchor(top: searchBarContainerView.topAnchor, leading: searchBarContainerView.leadingAnchor, bottom: searchBarContainerView.bottomAnchor, trailing: slidersIcon.leadingAnchor)
+        
     }
 }
 
@@ -105,18 +120,20 @@ extension UserListingView: UISearchBarDelegate {
 extension UserListingView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //data?.count ?? 0
-        10
+        data?.count ?? 0
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: repoCell, for: indexPath) as! RepoCell
-        //cell.titleLabel.text = data[indexPath.row].title
+        
+        if let data = data?[indexPath.item] {
+            cell.updateData(data: data)
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        didSelectItemAt?(indexPath.row)
+        didSelectItemAt?(data?[indexPath.item])
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
