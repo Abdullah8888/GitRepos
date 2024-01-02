@@ -268,6 +268,18 @@ extension UIColor {
         return UIColor(hex: "#7B7B7B")
     }
     
+    @nonobjc class var hex18A532: UIColor {
+        return UIColor(hex: "#18A532")
+    }
+    
+    @nonobjc class var hexA5A5A5: UIColor {
+        return UIColor(hex: "#A5A5A5")
+    }
+    
+    @nonobjc class var hexE8E6E6: UIColor {
+        return UIColor(hex: "#E8E6E6")
+    }
+
     @nonobjc class var hexF9F6F6: UIColor {
         return UIColor(hex: "#F9F6F6")
     }

@@ -24,13 +24,17 @@ final class UserFlowCoordinator: BaseCoordinator {
         navigationController?.setViewControllers([vc], animated: false)
     }
     
-    func showUserDetails() {
+    func showUserDetails(id: Int) {
         let vc = userDIContainer.makeUserDetailsController()
         vc.userFlowCoordinator = self
         navigationController?.pushViewController(vc, animated: false)
     }
     
+    func pop() {
+        navigationController?.popViewController(animated: false)
+    }
+    
     deinit {
-        print("OnboardingFlowCoordinator is now deallocated")
+        print("UserFlowCoordinator is now deallocated")
     }
 }

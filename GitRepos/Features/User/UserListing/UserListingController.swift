@@ -14,6 +14,8 @@ class UserListingController: BaseController<UserListingView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _view.backgroundColor = .blue
+        _view.didSelectItemAt = weakify({ strongSelf, id in
+            strongSelf.userFlowCoordinator?.showUserDetails(id: id)
+        })
     }
 }

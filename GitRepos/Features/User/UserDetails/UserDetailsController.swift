@@ -14,6 +14,10 @@ class UserDetailsController: BaseController<UserDetailsView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _view.backgroundColor = .red
+        showNavbar()
+        
+        backArrowHandler = weakify({ strongSelf in
+            strongSelf.userFlowCoordinator?.pop()
+        })
     }
 }

@@ -75,6 +75,8 @@
 		B8F1E28D2B436AC70017DF01 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E28C2B436AC70017DF01 /* UserDetailsView.swift */; };
 		B8F1E28F2B436AE40017DF01 /* RecentRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E28E2B436AE40017DF01 /* RecentRepoCell.swift */; };
 		B8F1E2912B436C840017DF01 /* UserDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2902B436C840017DF01 /* UserDIContainer.swift */; };
+		B8F1E2942B4388640017DF01 /* ReposModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2932B4388640017DF01 /* ReposModel.swift */; };
+		B8F1E2962B43F7A90017DF01 /* MainBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1E2952B43F7A90017DF01 /* MainBaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,8 @@
 		B8F1E28C2B436AC70017DF01 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		B8F1E28E2B436AE40017DF01 /* RecentRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRepoCell.swift; sourceTree = "<group>"; };
 		B8F1E2902B436C840017DF01 /* UserDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDIContainer.swift; sourceTree = "<group>"; };
+		B8F1E2932B4388640017DF01 /* ReposModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModel.swift; sourceTree = "<group>"; };
+		B8F1E2952B43F7A90017DF01 /* MainBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,7 @@
 			children = (
 				B8F1E1E82B429EE70017DF01 /* BaseController.swift */,
 				B8F1E1EA2B429EF90017DF01 /* BaseView.swift */,
+				B8F1E2952B43F7A90017DF01 /* MainBaseController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 		B8F1E27C2B43677D0017DF01 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				B8F1E2922B4388320017DF01 /* Entities */,
 				B8F1E2892B436AA20017DF01 /* UserDetails */,
 				B8F1E2882B436A8B0017DF01 /* UserListing */,
 				B8F1E2862B4369760017DF01 /* UserFlowCoordinator.swift */,
@@ -427,6 +433,14 @@
 				B8F1E28E2B436AE40017DF01 /* RecentRepoCell.swift */,
 			);
 			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		B8F1E2922B4388320017DF01 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B8F1E2932B4388640017DF01 /* ReposModel.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -615,6 +629,7 @@
 				B8F1E22C2B42BF4E0017DF01 /* UIview+Extension.swift in Sources */,
 				B8F1E2052B42A7C60017DF01 /* UIFont+Extension.swift in Sources */,
 				B8F1E28F2B436AE40017DF01 /* RecentRepoCell.swift in Sources */,
+				B8F1E2942B4388640017DF01 /* ReposModel.swift in Sources */,
 				B8F1E2032B42A7C60017DF01 /* UIColor+Extension.swift in Sources */,
 				B8F1E28D2B436AC70017DF01 /* UserDetailsView.swift in Sources */,
 				B8F1E2022B42A7C60017DF01 /* UITextField+Extension.swift in Sources */,
@@ -627,6 +642,7 @@
 				B8F1E2152B42A99D0017DF01 /* OnboardingController.swift in Sources */,
 				B8F1E2002B42A7C60017DF01 /* UITableView+Extension.swift in Sources */,
 				B8F1E2102B42A89D0017DF01 /* Button.swift in Sources */,
+				B8F1E2962B43F7A90017DF01 /* MainBaseController.swift in Sources */,
 				B8F1E2502B42E06C0017DF01 /* UserDefault+Util.swift in Sources */,
 				B8F1E2542B42E0940017DF01 /* UserDefaultManager.swift in Sources */,
 			);

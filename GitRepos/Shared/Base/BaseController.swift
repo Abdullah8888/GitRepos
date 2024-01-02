@@ -8,20 +8,8 @@
 import Foundation
 import UIKit
 
-class BaseController<SubView: UIView>: UIViewController {
+class BaseController<SubView: UIView>: MainBaseController {
     let _view: SubView
-    
-    private let loaderContainer: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.2)
-        return view
-    }()
-    
-    private let activity: UIActivityIndicatorView = {
-        let activity = UIActivityIndicatorView.init(style: .large)
-        activity.startAnimating()
-        return activity
-    }()
     
     init(view: SubView = SubView()) {
         self._view = view
@@ -41,26 +29,4 @@ class BaseController<SubView: UIView>: UIViewController {
         super.viewDidAppear(animated)
     }
     
-}
-
-extension BaseController {
-    
-    func showLoader() {
-        guard let keyWindow = UIWindow.keyWindow else { return }
-        if keyWindow.subviews.contains(loaderContainer) {
-            return
-        }
-        keyWindow.addSubview(loaderContainer)
-        loaderContainer.anchor(top: keyWindow.topAnchor, leading: keyWindow.leadingAnchor, bottom: keyWindow.bottomAnchor, trailing: keyWindow.trailingAnchor)
-        keyWindow.bringSubviewToFront(loaderContainer)
-        
-        loaderContainer.addSubview(activity)
-        activity.placeAtCenterOf(centerY: loaderContainer.centerYAnchor, centerX: loaderContainer.centerXAnchor)
-    }
-    
-    func removeLoader() {
-        DispatchQueue.main.async {
-            self.loaderContainer.removeFromSuperview()
-        }
-    }
 }
